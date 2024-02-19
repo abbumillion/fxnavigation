@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane fx:id="root" fx:controller="com.app.navigationdrawer.MainController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="431.0" prefWidth="635.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+   <left>
+      <VBox prefHeight="305.0" prefWidth="118.0" spacing="5.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="home" mnemonicParsing="false" prefHeight="25.0" prefWidth="113.0" text="Home" onAction="#setHome"/>
+            <Button fx:id="dashboard" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="110.0" text="Dashboard" onAction="#setDashboard" />
+            <Button fx:id="library" layoutX="10.0" layoutY="35.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="110.0" text="Library" onAction="#setDashboard"/>
+            <Button fx:id="albums" layoutX="10.0" layoutY="60.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="111.0" text="Albums" onAction="#setDashboard" />
+            <Button fx:id="images" layoutX="10.0" layoutY="85.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="107.0" text="Images" onAction="#setDashboard"/>
+            <Button fx:id="settings" layoutX="10.0" layoutY="110.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="108.0" text="Settings" onAction="#setSettings"/>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding></VBox>
+   </left>
+   <right>
+      <VBox prefHeight="305.0" prefWidth="88.0" BorderPane.alignment="CENTER">
+         <children>
+            <ListView fx:id="listview" prefHeight="313.0" prefWidth="88.0" />
+         </children></VBox>
+   </right>
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="58.0" prefWidth="635.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" prefHeight="64.0" prefWidth="635.0" text="copyright all right reserved">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children></HBox>
+   </bottom>
+   <top>
+      <HBox alignment="CENTER_LEFT" prefHeight="68.0" prefWidth="635.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="title" text="Navigation Drawer">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+         </children></HBox>
+   </top>
+</BorderPane>
